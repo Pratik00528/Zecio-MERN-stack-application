@@ -40,7 +40,7 @@ app.use('*', function (req, res) {
 })
 
 // PORT -> for running our server
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 const DEV_MODE = process.env.DEV_MODE;
 // We store the sensitive information in .env file and when ever you add/update something in .env file, kill the server
 // and run it again
